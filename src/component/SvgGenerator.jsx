@@ -7,7 +7,7 @@ const SvgGenerator = ({setSvgCode}) => {
   
   const handleClick = async ()=>{
       try {
-        const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyBzcfIqm-6ckDwh5nRaBVbeVuA6C506TOY',{
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${import.meta.env.VITE_API_KEY}`,{
           method:'POST',
           body: `{"contents":[{"parts":[{"text":"SVG code for ${inp} icon with 90 width and 90 height"}]}]}`
         })
