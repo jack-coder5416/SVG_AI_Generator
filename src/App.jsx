@@ -33,15 +33,15 @@ const App = () => {
             cols="40"
             className='border-[#92e84b] shadow-xl rounded-[4px] border-[5px] px-5 py-5 outline-none mx-auto'
           />
-          <div className='flex flex-row justify-between'>
-              <div onClick={handleCopy} className=' px-5 cursor-pointer text-center
+          <div className='flex flex-row'>
+              <div onClick={handleCopy} className='w-full px-5 cursor-pointer text-center
               text-[#fff] text-[17px] bg-[#175dc5] rounded-[10px] shadow-md py-2 hover:scale-[1.02] hover:bg-[#0f53b8]'>
                 Copy
               </div>
-              <div className=' px-5 cursor-pointer text-center
+              {/* <div className=' px-5 cursor-pointer text-center
               text-[#fff] text-[17px] bg-[#175dc5] rounded-[10px] shadow-md py-2 hover:scale-[1.02] hover:bg-[#0f53b8]'>
                 Download
-              </div>
+              </div> */}
           </div>
         </div>
         <img src={arrow}/>
